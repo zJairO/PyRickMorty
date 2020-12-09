@@ -1,0 +1,125 @@
+@-webkit-keyframes swing {
+    15% {
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px);
+    }
+    30% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+    50% {
+        -webkit-transform: translateY(3px);
+        transform: translateY(3px);
+    }
+    65% {
+        -webkit-transform: translateY(-3px);
+        transform: translateY(-3px);
+    }
+    80% {
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+@keyframes swing {
+    15% {
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px);
+    }
+    30% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+    50% {
+        -webkit-transform: translateY(3px);
+        transform: translateY(3px);
+    }
+    65% {
+        -webkit-transform: translateY(-3px);
+        transform: translateY(-3px);
+    }
+    80% {
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+	background: #2B2B2B;
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+    font-family: 'Roboto', sans-serif;
+	margin: 0;
+}
+a, a:hover {
+    color: black;
+    text-decoration: none;
+}
+.person-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-between;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.person {
+    background-color: #eee;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}
+.person:hover {
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+.person .img-container {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+.person .img-container img {
+    margin-top: 20px;
+    max-width: 90%;
+}
+.person .info {
+    margin-top: 20px;
+}
+.person .number {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-size: 0.8em;
+    padding: 5px 10px;
+}
+.person .name {
+    margin: 15px 0 7px;
+    letter-spacing: 1px;
+}
+small {
+    font-size: smaller;
+}
+h3 {
+    display: block;
+    font-size: 1em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.nav .link {
+    display: flex;
+    justify-content: center;
+}
